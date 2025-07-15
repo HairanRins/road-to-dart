@@ -130,10 +130,10 @@ Dans cet exemple :
 
 | Caractéristique | `StatelessWidget`                             | `StatefulWidget`                                              |
 | :-------------- | :-------------------------------------------- | :------------------------------------------------------------ |
-| **État**        | ❌ **Immuable**                               | ✅ **Mutable** (peut changer)                                 |
+| **État**        | ❌ **Immuable**                               | ✅ **Mutable** (peut changer)                                |
 | **Objectif**    | Afficher des données statiques                | Réagir aux interactions et aux changements de données         |
 | **Méthode clé** | `build()`                                     | `createState()`, `build()`, `setState()`                      |
 | **Cas d'usage** | `Icon`, `Text`, `RaisedButton`, écrans d'info | `Checkbox`, `TextField`, `Slider`, formulaires, écrans animés |
-| **Analogie**    | Une photographie 🖼️                           | Un tableau blanc interactif 칠판                              |
+| **Analogie**    | Une photographie 🖼️                           | Un tableau blanc interactif                                   |
 
 En règle générale, **commencez toujours par un `StatelessWidget`**. Si vous vous rendez compte que votre widget a besoin de gérer des données qui changent, alors seulement convertissez-le en `StatefulWidget`. Cette approche favorise une architecture plus simple et plus performante.
